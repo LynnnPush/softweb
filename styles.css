@@ -1,0 +1,108 @@
+/* 1) Basic reset and body styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif; /* or any preferred font */
+    background-color: #eef3f8;     /* light background */
+    color: #333;                  /* default text color */
+}
+
+/* 2) Optional container to center content */
+.container {
+    width: 960px;             /* or any max-width you prefer */
+    margin: 0 auto;           /* center it horizontally */
+    background-color: #fff;   /* white background inside */
+    min-height: 100vh;        /* so the container spans full height if needed */
+    border: 1px solid #ccc;   /* subtle border to replicate the “box” look */
+}
+
+/* 3) Header styles */
+header {
+    background-color: #1da2d8; /* top bar color */
+    color: #fff;               /* text color in header */
+    padding: 20px;
+    text-align: center;        /* center the site title/subtitle */
+}
+
+header h1 {
+    margin-bottom: 5px;
+    font-size: 2em;
+}
+
+header h2 {
+    font-weight: normal;
+    font-size: 1.1em;
+}
+
+/* 4) Navigation bar */
+nav {
+    background-color: #f9f9f9;
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+    /* If you want it aligned center within the container, you can do:
+       text-align: center;
+       or style nav ul accordingly. */
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center; /* horizontal center of nav links */
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #1da2d8;
+    font-weight: bold;
+    padding: 5px 10px;
+}
+
+nav a:hover {
+    background-color: #1da2d8;
+    color: #fff;
+    transition: 0.3s;
+}
+
+/* 5) Main layout: article on the left, aside on the right */
+main {
+    display: flex;            /* two-column layout with flexbox */
+    justify-content: space-between;
+    padding: 20px;
+}
+
+article {
+    width: 65%;               /* main content area takes ~2/3 of width */
+    margin-right: 20px;       /* spacing between article and aside */
+}
+
+aside {
+    width: 30%;               /* sidebar area */
+    background-color: #f9f9f9;
+    padding: 15px;
+    border: 1px solid #ddd;
+}
+
+/* 6) Footer styling */
+footer {
+    background-color: #1da2d8;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: underline;
+}
+footer a:hover {
+    color: #ccc;
+}
