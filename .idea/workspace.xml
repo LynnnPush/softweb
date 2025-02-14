@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="1fd55cc5-15e6-4f17-8dc3-67c868b36de0" name="更改" comment="Add files not version controlled yet.">
+      <change afterPath="$PROJECT_DIR$/Lab1_CouBooks/About.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lab1_CouBooks/Feedback.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lab1_CouBooks/Home.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lab1_CouBooks/Reservation.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lab1_CouBooks/Reservation.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lab1_CouBooks/feedback_styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1_CouBooks/CouBooks.html" beforeDir="false" afterPath="$PROJECT_DIR$/Lab1_CouBooks/Home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1_CouBooks/Courses.html" beforeDir="false" afterPath="$PROJECT_DIR$/Lab1_CouBooks/Courses.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1_CouBooks/styles.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1_CouBooks/styles2.css" beforeDir="false" afterPath="$PROJECT_DIR$/Lab1_CouBooks/About.css" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitLabMergeRequestFiltersHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPENED&quot;,
+    &quot;assignee&quot;: {
+      &quot;type&quot;: &quot;org.jetbrains.plugins.gitlab.mergerequest.ui.filters.GitLabMergeRequestsFiltersValue.MergeRequestsMemberFilterValue.MergeRequestsAssigneeFilterValue&quot;,
+      &quot;username&quot;: &quot;r0978180&quot;,
+      &quot;fullname&quot;: &quot;Shanghong Lin&quot;
+    }
+  }
+}</component>
+  <component name="GitLabMergeRequestsSettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;first&quot;: &quot;https://gitlab.kuleuven.be/groep-t/courses/web-technology/students/tuesday/aj2425-r0978180-Lin-Shanghong.git&quot;,
+    &quot;second&quot;: &quot;bd7edde2-a684-429f-9a42-8e7bfe86df4d&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
+  <component name="ProjectId" id="2stFktPzWhE4utWA0pfg2LCZo1D" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "E:/SoftwebProject/Lab1_CouBooks",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "项目",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "advanced.settings",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\SoftwebProject\Lab1_CouBooks" />
+      <recent name="E:\SoftwebProject" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\SoftwebProject\Lab1_CouBooks" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9f38398b9061-18abd8497189-intellij.indexing.shared.core-IU-241.14494.240" />
+        <option value="bundled-js-predefined-1d06a55b98c1-74d2a5396914-JavaScript-IU-241.14494.240" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="默认任务">
+      <changelist id="1fd55cc5-15e6-4f17-8dc3-67c868b36de0" name="更改" comment="" />
+      <created>1739267111183</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1739267111183</updated>
+      <workItem from="1739267112433" duration="3978000" />
+      <workItem from="1739364162067" duration="121000" />
+      <workItem from="1739454923085" duration="1306000" />
+      <workItem from="1739456741359" duration="9319000" />
+      <workItem from="1739467764917" duration="161000" />
+      <workItem from="1739536129768" duration="380000" />
+      <workItem from="1739545315433" duration="7801000" />
+    </task>
+    <task id="LOCAL-00001" summary="Create git and repo">
+      <option name="closed" value="true" />
+      <created>1739267588868</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1739267588868</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Create git and repo">
+      <option name="closed" value="true" />
+      <created>1739275420478</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1739275420478</updated>
+    </task>
+    <task id="LOCAL-00003" summary="CSS complete. Next: Add remaining webpages and media queries.">
+      <option name="closed" value="true" />
+      <created>1739467453198</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1739467453198</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Refactor: Add a parent dir for the lab1 project">
+      <option name="closed" value="true" />
+      <created>1739546506770</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1739546506770</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Add files not version controlled yet.">
+      <option name="closed" value="true" />
+      <created>1739546569013</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1739546569013</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Main part of Body to be completed" />
+    <MESSAGE value="Main part of Body to be completed" />
+    <MESSAGE value="CSS complete. Next: Add remaining webpages and media queries." />
+    <MESSAGE value="Refactor: Add a parent dir for the lab1 project" />
+    <MESSAGE value="Add files not version controlled yet." />
+    <option name="LAST_COMMIT_MESSAGE" value="Add files not version controlled yet." />
+  </component>
+</project>

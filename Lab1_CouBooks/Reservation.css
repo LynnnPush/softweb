@@ -76,53 +76,57 @@ body {
 }
 .middle-part main {
     display: flex;            /* example: two-column layout */
-    justify-content: space-between;
+    flex-direction: column;
     /*the flex items are positioned on opposite ends of the <main> container */
     /*with a flexible gap between them.*/
 }
-.middle-part article {
-    width: 65%; /* Based on Parent Container*/
-    margin-right: 20px;
+
+.middle-part section {
+    /*border: 1px solid #ccc;*/
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.middle-part section h2 {
+    margin-top: 0;
 }
 
-
-.middle-part article p{
-    margin-top: 15px;
+.middle-part label {
+    display: inline-block;
+    /*
+    Flow inline with text (like an inline element)
+    Respect width and height properties and top and bottom margins/paddings (like a block element)
+    */
+    width: 120px;
+    margin-right: 10px;
 }
 
-.middle-part aside {
-    width: 30%;
-    background-color: #f9f9f9;
-    padding: 15px;
-    border-radius: 5px;
+/* Styles for labels in section with id="step2" */
+#step2 label {
+    display: inline-block;
+    width: 500px;
+    margin-right: 15px;
 }
-/* Add separated margins between each child element inside aside */
-.middle-part aside ul {
-    margin-top: 5px;
-}
-.middle-part aside ul+h2{
+
+.middle-part button {
     margin-top: 10px;
 }
 
-.middle-part aside p {
-    margin-top: 5px;
-}
-.middle-part aside a {
-    margin-top: 10px;
-}
 
 /*
    4) THIRD PART: footer
    - White background, center text
 */
 .bottom-part {
-    /* same base styling from .part */
+    background-color: #1da2d8;  /* blue background */
+    border-color: #1da2d8;      /* match the border to the background (optional) */
+    color: #fff;                /* white text */
 }
+
 .bottom-part footer {
     text-align: center;
 }
 .bottom-part footer a {
-    color: #1da2d8;
+    color: #fff;                /* white text */
     text-decoration: underline;
 }
 .bottom-part footer a:hover {

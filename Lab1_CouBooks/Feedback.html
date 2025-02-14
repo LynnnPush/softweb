@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CouBooks</title>
+    <!-- Link to the external CSS file -->
+    <link rel="stylesheet" href="feedback_styles.css">
+</head>
+
+<body>
+<!-- FIRST PART: header + nav side by side in a blue box -->
+<div class="top-part">
+    <header>
+        <h1>CouBooks</h1>
+        <h2>A Webtech demo site</h2>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">COURSES</a></li>
+            <li><a href="#">RESERVATION</a></li>
+            <li><a href="#">ABOUT</a></li>
+        </ul>
+    </nav>
+</div>
+
+<!-- SECOND PART: main content -->
+<div class="middle-part">
+    <main>
+
+        <!-- STEP 1: WHO ARE YOU -->
+        <section>
+            <form>
+                <h2>ADD FEEDBACK</h2>
+
+                <p>
+                    <label for="author">Author:</label>
+                    <input type="text" id="author" name="author" required />
+                </p>
+
+                <p>
+                    <label for="feedback">Feedback:</label>
+                    <textarea id="feedback" name="feedback" rows="5" cols="33" required></textarea>
+                </p>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+
+    </main>
+</div>
+
+<!-- THIRD PART: footer -->
+<div class="bottom-part">
+    <footer>
+        <p>©Copyright 2050 by nobody. All rights reversed.
+            <a href="#">Privacy Policy</a>
+            <a href="#">Term of Use</a>
+        </p>
+    </footer>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CouBooks</title>
+    <!-- Link to the external CSS file -->
+    <link rel="stylesheet" href="Reservation.css">
+</head>
+
+<body>
+<!-- FIRST PART: header + nav side by side in a blue box -->
+<div class="top-part">
+    <header>
+        <h1>CouBooks</h1>
+        <h2>A Webtech demo site</h2>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">COURSES</a></li>
+            <li><a href="#">RESERVATION</a></li>
+            <li><a href="#">ABOUT</a></li>
+        </ul>
+    </nav>
+</div>
+
+<!-- SECOND PART: main content -->
+<div class="middle-part">
+    <main>
+
+        <!-- STEP 1: WHO ARE YOU -->
+        <section id="step1">
+            <form>
+                <h2>STEP 1: WHO ARE YOU</h2>
+                <p>Please provide some info about you, so we can search for the books you need.</p>
+
+                <p>
+                    <label for="fase">Fase:</label>
+                    <select name="fase" id="fase">
+                        <option value="firstBachelor">First Bachelor</option>
+                        <option value="secondBachelor">Second Bachelor</option>
+                        <option value="master">Master</option>
+                        <!-- Add more options as needed -->
+                    </select>
+                </p>
+
+                <p>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required />
+                </p>
+
+                <button type="submit">Next...</button>
+            </form>
+        </section>
+
+        <!-- STEP 2: WHAT BOOKS DO YOU NEED? -->
+        <section id="step2">
+            <form>
+                <h2>STEP 2: WHAT BOOKS DO YOU NEED?</h2>
+                <p>Select the books you wish to order.</p>
+
+                <p>
+                    <input type="checkbox" id="book1" name="books" value="Computer Networking: a top down approach" />
+                    <label for="book1">Computer Networking: a top down approach</label>
+                </p>
+
+                <p>
+                    <input type="checkbox" id="book2" name="books" value="Silberschatz's Operating System Concepts" />
+                    <label for="book2">Silberschatz's Operating System Concepts</label>
+                </p>
+
+                <button type="submit">Next...</button>
+            </form>
+        </section>
+
+        <!-- STEP 3: YOU HAVE ORDERED... -->
+        <section id="step3">
+            <form>
+                <h2>STEP 3: YOU HAVE ORDERED...</h2>
+                <p>
+                    Below you find an overview of the books you have reserved. Once you confirm your reservation, you can pick them up at our KD and pay at the desk.
+                </p>
+
+                <!-- In a real application, the selected books would be dynamically displayed here. -->
+                <ul>
+                    <li>Computer Networking: a top down approach</li>
+                    <!-- Add more list items based on user selection -->
+                </ul>
+
+                <button type="submit">Confirm Reservation</button>
+            </form>
+        </section>
+
+    </main>
+</div>
+
+<!-- THIRD PART: footer -->
+<div class="bottom-part">
+    <footer>
+        <p>©Copyright 2050 by nobody. All rights reversed.
+            <a href="#">Privacy Policy</a>
+            <a href="#">Term of Use</a>
+        </p>
+    </footer>
+</div>
+
+</body>
+</html>

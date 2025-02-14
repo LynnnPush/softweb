@@ -1,0 +1,134 @@
+/* Basic reset + body style */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eef3f8;
+    display: flex;
+    flex-direction: column;
+}
+
+/*
+   1) Common .part styling for the 3 big sections
+   - Rounded corners
+   - Light border
+   - White interior (except for the top part which we'll override)
+   - Centered on page
+   - Spaced apart from each other
+*/
+.top-part,
+.middle-part,
+.bottom-part {
+    width: 80%;                /* you can adjust width as you like */
+    margin: 20px auto;         /* space above/below each rectangle */
+    border-radius: 10px;       /* rounded corners */
+    padding: 20px;             /* internal padding */
+    background-color: #fff;    /* default background for middle & bottom */
+}
+
+/*
+   2) FIRST PART: header + nav side by side, blue background
+   - We override the background color and border color
+   - Use flexbox to place them horizontally
+*/
+.top-part {
+    background-color: #1da2d8;  /* blue background */
+    border-color: #1da2d8;      /* match the border to the background (optional) */
+    color: #fff;                /* white text */
+    display: flex;
+    justify-content: space-between; /* header on left, nav on right */
+    align-items: center;            /* vertically center them */
+}
+
+/* If you want the header to take more space than nav, you can do:
+.top-part header { flex: 2; }
+.top-part nav { flex: 1; }
+*/
+
+/* Navigation menu style inside the top-part */
+.top-part nav ul {
+    list-style: none;
+}
+.top-part nav li {
+    display: inline-block;
+    margin-right: 10px;
+}
+.top-part nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+.top-part nav a:hover {
+    text-decoration: underline;
+}
+
+/*
+   3) SECOND PART: main content
+   - The .middle-part class has white background,
+     but you can style <main>, <article>, <aside> inside it as needed
+*/
+.middle-part {
+    /* Already has white bg from the base .part styling */
+}
+.middle-part main {
+    display: flex;            /* example: two-column layout */
+    justify-content: space-between;
+    /*the flex items are positioned on opposite ends of the <main> container */
+    /*with a flexible gap between them.*/
+}
+.middle-part article {
+    width: 65%; /* Based on Parent Container*/
+    margin-right: 20px;
+}
+
+
+.middle-part article p{
+    margin-top: 15px;
+}
+
+.middle-part aside {
+    width: 30%;
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 5px;
+}
+/* Add separated margins between each child element inside aside */
+.middle-part aside ul {
+    margin-top: 5px;
+}
+.middle-part aside ul+h2{
+    margin-top: 10px;
+}
+
+.middle-part aside p {
+    margin-top: 5px;
+}
+.middle-part aside a {
+    margin-top: 10px;
+}
+
+
+/*
+   4) THIRD PART: footer
+   - White background, center text
+*/
+.bottom-part {
+    background-color: #1da2d8;  /* blue background */
+    border-color: #1da2d8;      /* match the border to the background (optional) */
+    color: #fff;                /* white text */
+}
+
+.bottom-part footer {
+    text-align: center;
+}
+.bottom-part footer a {
+    color: #fff;                /* white text */
+    text-decoration: underline;
+}
+.bottom-part footer a:hover {
+    color: #ccc;
+}

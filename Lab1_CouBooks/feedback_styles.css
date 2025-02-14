@@ -1,0 +1,141 @@
+/* Basic reset + body style */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eef3f8;
+    display: flex;
+    flex-direction: column;
+}
+
+/*
+   1) Common .part styling for the 3 big sections
+   - Rounded corners
+   - Light border
+   - White interior (except for the top part which we'll override)
+   - Centered on page
+   - Spaced apart from each other
+*/
+.top-part,
+.middle-part,
+.bottom-part {
+    width: 80%;                /* you can adjust width as you like */
+    margin: 20px auto;         /* space above/below each rectangle */
+    border-radius: 10px;       /* rounded corners */
+    padding: 20px;             /* internal padding */
+    background-color: #fff;    /* default background for middle & bottom */
+}
+
+/*
+   2) FIRST PART: header + nav side by side, blue background
+   - We override the background color and border color
+   - Use flexbox to place them horizontally
+*/
+.top-part {
+    background-color: #1da2d8;  /* blue background */
+    border-color: #1da2d8;      /* match the border to the background (optional) */
+    color: #fff;                /* white text */
+    display: flex;
+    justify-content: space-between; /* header on left, nav on right */
+    align-items: center;            /* vertically center them */
+}
+
+/* If you want the header to take more space than nav, you can do:
+.top-part header { flex: 2; }
+.top-part nav { flex: 1; }
+*/
+
+/* Navigation menu style inside the top-part */
+.top-part nav ul {
+    list-style: none;
+}
+.top-part nav li {
+    display: inline-block;
+    margin-right: 10px;
+}
+.top-part nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+.top-part nav a:hover {
+    text-decoration: underline;
+}
+
+/*
+   3) SECOND PART: main content
+   - The .middle-part class has white background,
+     but you can style <main>, <article>, <aside> inside it as needed
+*/
+.middle-part {
+    /* Already has white bg from the base .part styling */
+}
+.middle-part main {
+    display: flex;            /* example: two-column layout */
+    flex-direction: column;
+    /*the flex items are positioned on opposite ends of the <main> container */
+    /*with a flexible gap between them.*/
+}
+
+.middle-part section {
+    /*border: 1px solid #ccc;*/
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.middle-part section h2 {
+    margin-top: 0;
+}
+
+.middle-part label {
+    display: inline-block;
+    /*
+    Flow inline with text (like an inline element)
+    Respect width and height properties and top and bottom margins/paddings (like a block element)
+    */
+    width: 120px;
+    margin-right: 10px;
+}
+
+/* Specific style for textarea labels */
+.middle-part label[for="feedback"] {
+    display: block;
+    width: auto;
+    margin-bottom: 5px;
+}
+
+.middle-part textarea {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+
+.middle-part button {
+    margin-top: 10px;
+}
+
+
+/*
+   4) THIRD PART: footer
+   - White background, center text
+*/
+.bottom-part {
+    background-color: #1da2d8;  /* blue background */
+    border-color: #1da2d8;      /* match the border to the background (optional) */
+    color: #fff;                /* white text */
+}
+
+.bottom-part footer {
+    text-align: center;
+}
+.bottom-part footer a {
+    color: #fff;                /* white text */
+    text-decoration: underline;
+}
+.bottom-part footer a:hover {
+    color: #ccc;
+}
