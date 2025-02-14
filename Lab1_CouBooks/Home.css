@@ -132,3 +132,20 @@ body {
 .bottom-part footer a:hover {
     color: #ccc;
 }
+
+/* Media Query for tablets and small desktops */
+@media (max-width: 768px)
+{ .top-part, .middle-part, .bottom-part { width: 95%; margin: 10px auto; padding: 15px; }
+
+    /* Stack header and navigation vertically */
+    .top-part { flex-direction: column; align-items: flex-start; }
+    .top-part nav ul { display: flex; flex-wrap: wrap; justify-content: center; margin-top: 10px; }
+
+    /* Change the main content layout to a single column */
+    .middle-part main { flex-direction: column; }
+    .middle-part article, .middle-part aside { width: 100%; margin: 0; }
+    .middle-part article { margin-bottom: 20px; } }
+
+/* Media Query for mobile devices */
+@media (max-width: 480px)
+{ body { font-size: 14px;} }

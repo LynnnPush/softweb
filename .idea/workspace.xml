@@ -4,17 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1fd55cc5-15e6-4f17-8dc3-67c868b36de0" name="更改" comment="Add files not version controlled yet.">
-      <change afterPath="$PROJECT_DIR$/Lab1_CouBooks/About.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lab1_CouBooks/Feedback.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lab1_CouBooks/Home.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lab1_CouBooks/Reservation.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lab1_CouBooks/Reservation.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lab1_CouBooks/feedback_styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab1_CouBooks/CouBooks.html" beforeDir="false" afterPath="$PROJECT_DIR$/Lab1_CouBooks/Home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab1_CouBooks/Courses.html" beforeDir="false" afterPath="$PROJECT_DIR$/Lab1_CouBooks/Courses.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab1_CouBooks/styles.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab1_CouBooks/styles2.css" beforeDir="false" afterPath="$PROJECT_DIR$/Lab1_CouBooks/About.css" afterDir="false" />
+    <list default="true" id="1fd55cc5-15e6-4f17-8dc3-67c868b36de0" name="更改" comment="All webpages and css files completed. Next: Media queries.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1_CouBooks/Feedback.html" beforeDir="false" afterPath="$PROJECT_DIR$/Lab1_CouBooks/Feedback.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1_CouBooks/Home.css" beforeDir="false" afterPath="$PROJECT_DIR$/Lab1_CouBooks/Home.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1_CouBooks/feedback_styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/Lab1_CouBooks/Feedback.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,7 +103,7 @@
       <workItem from="1739456741359" duration="9319000" />
       <workItem from="1739467764917" duration="161000" />
       <workItem from="1739536129768" duration="380000" />
-      <workItem from="1739545315433" duration="7801000" />
+      <workItem from="1739545315433" duration="9023000" />
     </task>
     <task id="LOCAL-00001" summary="Create git and repo">
       <option name="closed" value="true" />
@@ -151,7 +145,15 @@
       <option name="project" value="LOCAL" />
       <updated>1739546569013</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="All webpages and css files completed. Next: Media queries.">
+      <option name="closed" value="true" />
+      <created>1739553859767</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1739553859767</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -174,6 +176,7 @@
     <MESSAGE value="CSS complete. Next: Add remaining webpages and media queries." />
     <MESSAGE value="Refactor: Add a parent dir for the lab1 project" />
     <MESSAGE value="Add files not version controlled yet." />
-    <option name="LAST_COMMIT_MESSAGE" value="Add files not version controlled yet." />
+    <MESSAGE value="All webpages and css files completed. Next: Media queries." />
+    <option name="LAST_COMMIT_MESSAGE" value="All webpages and css files completed. Next: Media queries." />
   </component>
 </project>
