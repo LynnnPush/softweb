@@ -1,4 +1,37 @@
-<!DOCTYPE html>
+<?php
+
+use php\Shop;
+
+require_once 'Shop.php';
+require_once  'ConnectDb.php';
+
+// Connect to the database
+$inst = ConnectDb::getInstance();
+$db = $inst->getConnection();   //PDO
+
+// Instantiate the Shop controller
+$shop = new Shop($db);
+
+// If form is submitted (POST), process the current step
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $shop->processStep($_POST);
+
+    // If we've just moved beyond the final step (say step 3), store the order
+    if ($shop->getStep() > 3) {
+        $shop->storeOrder();
+
+        // Redirect or show a thank-you message
+        header('Location: thankyou.php');
+        exit;
+    }
+}
+
+// Determine which step we are on
+$currentStep = $shop->getStep();
+
+?>
+
+    <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -30,7 +63,8 @@
 
         <!-- STEP 1: WHO ARE YOU -->
         <section id="step1">
-            <form>
+            <?php if ($currentStep === 1): ?>
+            <form method="post" action="">
                 <h2>STEP 1: WHO ARE YOU</h2>
                 <p>Please provide some info about you, so we can search for the books you need.</p>
 
@@ -55,18 +89,19 @@
 
         <!-- STEP 2: WHAT BOOKS DO YOU NEED? -->
         <section id="step2">
-            <form>
+            <?php elseif ($currentStep === 2): ?>
+            <form method="post" action="">
                 <h2>STEP 2: WHAT BOOKS DO YOU NEED?</h2>
                 <p>Select the books you wish to order.</p>
 
                 <p>
-                    <input type="checkbox" id="book1" name="books" value="Computer Networking: a top down approach" />
+                    <input type="checkbox" id="book1" name="books[]" value="3" />
                     <label for="book1">Computer Networking: a top down approach</label>
                 </p>
 
                 <p>
-                    <input type="checkbox" id="book2" name="books" value="Silberschatz's Operating System Concepts" />
-                    <label for="book2">Silberschatz's Operating System Concepts</label>
+                    <input type="checkbox" id="book2" name="books[]" value="2" />
+                    <label for="book2">Biotechnology</label>
                 </p>
 
                 <button type="submit">Next...</button>
@@ -75,21 +110,37 @@
 
         <!-- STEP 3: YOU HAVE ORDERED... -->
         <section id="step3">
-            <form>
+            <?php elseif ($currentStep === 3): ?>
+            <form method="post" action="">
                 <h2>STEP 3: YOU HAVE ORDERED...</h2>
+
+                <?php
+                // Fetch the accumulated data from the session for display
+                $data = $_SESSION['reservation_data'] ?? [];
+                ?>
                 <p>
                     Below you find an overview of the books you have reserved. Once you confirm your reservation, you can pick them up at our KD and pay at the desk.
                 </p>
 
                 <!-- In a real application, the selected books would be dynamically displayed here. -->
                 <ul>
-                    <li>Computer Networking: a top down approach</li>
-                    <!-- Add more list items based on user selection -->
+                    <?php
+                    if (isset($data['books']) && is_array($data['books'])) {
+                        foreach ($data['books'] as $bookId) {
+                            // Fetch the book title based on the book ID
+                            $bookTitle = $shop->getBookTitle($bookId); // Assuming this method exists in your Shop class
+                            echo "<li>" . htmlspecialchars($bookTitle) . "</li>";
+                        }
+                    } else {
+                        echo "<li>No books selected</li>";
+                    }
+                    ?>
                 </ul>
 
                 <button type="submit">Confirm Reservation</button>
             </form>
         </section>
+        <?php endif; ?>
 
     </main>
 </div>

@@ -4,16 +4,30 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1fd55cc5-15e6-4f17-8dc3-67c868b36de0" name="更改" comment="All webpages and css files completed. Next: Media queries.">
+    <list default="true" id="1fd55cc5-15e6-4f17-8dc3-67c868b36de0" name="更改" comment="Add media queries to Home.css.">
+      <change afterPath="$PROJECT_DIR$/Lab1_CouBooks/Home.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lab1_CouBooks/php/ConnectDb.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lab1_CouBooks/php/Courses.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lab1_CouBooks/php/Feedback.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lab1_CouBooks/php/Greeter.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lab1_CouBooks/php/Reservation_class.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lab1_CouBooks/php/Shop.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lab1_CouBooks/php/main.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lab1_CouBooks/php/testCon.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lab1_CouBooks/php/thankyou.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lab1_CouBooks/test.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab1_CouBooks/Feedback.html" beforeDir="false" afterPath="$PROJECT_DIR$/Lab1_CouBooks/Feedback.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab1_CouBooks/Home.css" beforeDir="false" afterPath="$PROJECT_DIR$/Lab1_CouBooks/Home.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab1_CouBooks/feedback_styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/Lab1_CouBooks/Feedback.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1_CouBooks/.idea/SoftwebProject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Lab1_CouBooks/.idea/SoftwebProject.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1_CouBooks/Reservation.css" beforeDir="false" afterPath="$PROJECT_DIR$/Lab1_CouBooks/php/Reservation.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1_CouBooks/Reservation.html" beforeDir="false" afterPath="$PROJECT_DIR$/Lab1_CouBooks/php/Reservation.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -41,6 +55,19 @@
     &quot;second&quot;: &quot;bd7edde2-a684-429f-9a42-8e7bfe86df4d&quot;
   }
 }</component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/../PHP/php-8.4.4-nts-Win32-vs17-x64/php.ini" root0="SKIP_INSPECTION" />
+  </component>
+  <component name="KubernetesApiPersistence"><![CDATA[{}]]></component>
+  <component name="KubernetesApiProvider"><![CDATA[{
+  "isMigrated": true
+}]]></component>
+  <component name="PhpDebugGeneral" listening_started="true" />
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP">
+    <include_path>
+      <path value="$PROJECT_DIR$/../PHP/php-8.4.4-nts-Win32-vs17-x64" />
+    </include_path>
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 5
 }</component>
@@ -55,11 +82,16 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "DefaultHtmlFileTemplate": "HTML File",
+    "JavaScript Debug.main.php.executor": "Run",
+    "PHP Built-in Web Server.Unnamed.executor": "Run",
+    "PHP Script.Home.php.executor": "Run",
+    "PHP Script.Reservation.php.executor": "Debug",
+    "PHP Script.main.php.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "E:/SoftwebProject/Lab1_CouBooks",
+    "last_opened_file_path": "E:/PHP/php-8.4.4-nts-Win32-vs17-x64/php.exe",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -68,8 +100,13 @@
     "project.structure.last.edited": "项目",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "advanced.settings",
+    "settings.editor.selected.configurable": "reference.webide.settings.project.settings.php",
     "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
+    ]
   }
 }]]></component>
   <component name="RecentsManager">
@@ -78,8 +115,17 @@
       <recent name="E:\SoftwebProject" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\SoftwebProject\Lab1_CouBooks\php" />
       <recent name="E:\SoftwebProject\Lab1_CouBooks" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Unnamed" type="PhpBuiltInWebServerConfigurationType" factoryName="PHP Built-in Web Server" nameIsGenerated="true" document_root="$PROJECT_DIR$">
+      <method v="2" />
+    </configuration>
+    <configuration name="Unnamed" type="PhpBuiltInWebServerConfigurationType" factoryName="PHP Built-in Web Server" nameIsGenerated="true" document_root="$PROJECT_DIR$">
+      <method v="2" />
+    </configuration>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -103,7 +149,17 @@
       <workItem from="1739456741359" duration="9319000" />
       <workItem from="1739467764917" duration="161000" />
       <workItem from="1739536129768" duration="380000" />
-      <workItem from="1739545315433" duration="9023000" />
+      <workItem from="1739545315433" duration="9344000" />
+      <workItem from="1739807511100" duration="640000" />
+      <workItem from="1739870377497" duration="81000" />
+      <workItem from="1739870468483" duration="575000" />
+      <workItem from="1739871054933" duration="9069000" />
+      <workItem from="1739962035361" duration="1258000" />
+      <workItem from="1739963314618" duration="86000" />
+      <workItem from="1739963412462" duration="62000" />
+      <workItem from="1739964562852" duration="350000" />
+      <workItem from="1739991566619" duration="5178000" />
+      <workItem from="1740047888844" duration="20630000" />
     </task>
     <task id="LOCAL-00001" summary="Create git and repo">
       <option name="closed" value="true" />
@@ -153,7 +209,15 @@
       <option name="project" value="LOCAL" />
       <updated>1739553859767</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Add media queries to Home.css.">
+      <option name="closed" value="true" />
+      <created>1739555369102</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1739555369102</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -177,6 +241,11 @@
     <MESSAGE value="Refactor: Add a parent dir for the lab1 project" />
     <MESSAGE value="Add files not version controlled yet." />
     <MESSAGE value="All webpages and css files completed. Next: Media queries." />
-    <option name="LAST_COMMIT_MESSAGE" value="All webpages and css files completed. Next: Media queries." />
+    <MESSAGE value="Add media queries to Home.css." />
+    <option name="LAST_COMMIT_MESSAGE" value="Add media queries to Home.css." />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
