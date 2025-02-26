@@ -1,10 +1,27 @@
+<?php
+
+use php\Courses_Class;
+
+require_once 'ConnectDb.php';
+require_once 'Courses_Class.php';
+
+// Create an instance of the Courses_Class
+$coursesClass = new Courses_Class();
+
+// Get all courses
+$courses = $coursesClass->getAllCourses();
+
+//// Return the courses as JSON
+//echo json_encode($courses);
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>CouBooks</title>
     <!-- Link to the external CSS file -->
-    <link rel="stylesheet" href="Home.css">
+    <link rel="stylesheet" href="Courses.css">
 </head>
 
 <body>
@@ -29,19 +46,32 @@
             <main>
                 <article>
                     <p>
-                        Below you can find an overview of all available courses.
+                        you can find an overview of all available courses.<br>
+                        Click the listed book name for details.
                     </p>
 
+                    <!-- Static ver: -->
                     <h2>Computer Networks</h2>
                     <ul>
-                        <li>Computer networking: a Top down approach.</li>
+                        <li data-isbn="9780133594140">Computer networking: a Top down approach.</li>
                     </ul>
 
                     <h2>Operating Systems</h2>
                     <ul>
-                        <li>Lec: explore kernels and threads.</li>
+                        <li data-isbn="0471694665">Course book: Operating system concepts</li>
                         <li>Lab: design an operation system for temperature sensor from scratch.</li>
                     </ul>
+
+
+                    <!-- Dynamic ver: -->
+
+                    <!-- An empty container where we’ll show the fetched book info. -->
+                    <div id="result-container">
+                        <div id="book-info">
+                        </div>
+                    </div>
+
+
                 </article>
             </main>
         </div>
@@ -56,5 +86,7 @@
             </footer>
         </div>
 
+        <!-- Link to the external JavaScript file -->
+        <script src="../isbn.js"></script>
 </body>
 </html>

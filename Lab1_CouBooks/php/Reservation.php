@@ -1,36 +1,57 @@
 <?php
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
 
+use php\ConnectDb;
 use php\Shop;
 
 require_once 'Shop.php';
-require_once  'ConnectDb.php';
+require_once 'ConnectDb.php';
 
-// Connect to the database
-$inst = ConnectDb::getInstance();
-$db = $inst->getConnection();   //PDO
 
-// Instantiate the Shop controller
-$shop = new Shop($db);
 
-// If form is submitted (POST), process the current step
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    $shop->processStep($_POST);
-
-    // If we've just moved beyond the final step (say step 3), store the order
-    if ($shop->getStep() > 3) {
-        $shop->storeOrder();
-
-        // Redirect or show a thank-you message
-        header('Location: thankyou.php');
-        exit;
+// Function to clear session and redirect
+function clearSessionAndRedirect() {
+    if (session_status() == PHP_SESSION_NONE) {
+        session_start();
     }
+    session_unset();
+    session_destroy();
+    header('Location: Reservation.php');
+    exit;
 }
 
-// Determine which step we are on
-$currentStep = $shop->getStep();
+try {
+    // Connect to the database
+    $db = ConnectDb::getConnection();   //PDO
+
+    // Instantiate the Shop controller
+    $shop = new Shop($db);
+
+    // If form is submitted (POST), process the current step
+    if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+        $shop->processStep($_POST);
+
+        // If we've just moved beyond the final step (step 3), store the order
+        if ($shop->getStep() > 3) {
+            $shop->storeOrder();
+            clearSessionAndRedirect();
+        }
+    }
+
+    // Determine which step we are on
+    $currentStep = $shop->getStep();
+
+} catch (Exception $e) {
+    // Log the error (you may want to implement proper logging)
+    error_log("Error in Reservation.php: " . $e->getMessage());
+
+    // Clear session and redirect on any error
+    clearSessionAndRedirect();
+}
 
 ?>
-
     <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -83,14 +104,19 @@ $currentStep = $shop->getStep();
                     <input type="email" id="email" name="email" required />
                 </p>
 
-                <button type="submit">Next...</button>
+                <button id="step1_btn" type="button">Next...</button>
             </form>
+            <!-- Welcome message -->
+            <div id="welcomeMsg">
+
+            </div>
         </section>
 
         <!-- STEP 2: WHAT BOOKS DO YOU NEED? -->
         <section id="step2">
             <?php elseif ($currentStep === 2): ?>
             <form method="post" action="">
+
                 <h2>STEP 2: WHAT BOOKS DO YOU NEED?</h2>
                 <p>Select the books you wish to order.</p>
 
@@ -104,7 +130,7 @@ $currentStep = $shop->getStep();
                     <label for="book2">Biotechnology</label>
                 </p>
 
-                <button type="submit">Next...</button>
+                <button id="step2_btn" type="submit">Next...</button>
             </form>
         </section>
 
@@ -137,7 +163,7 @@ $currentStep = $shop->getStep();
                     ?>
                 </ul>
 
-                <button type="submit">Confirm Reservation</button>
+                <button id="step3_btn" type="submit">Confirm Reservation</button>
             </form>
         </section>
         <?php endif; ?>
@@ -154,6 +180,6 @@ $currentStep = $shop->getStep();
         </p>
     </footer>
 </div>
-
+<script src="check-user.js"></script>
 </body>
 </html>

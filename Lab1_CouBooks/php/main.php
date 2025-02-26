@@ -2,6 +2,7 @@
 // main.php
 
 // Include the Greeter class
+use php\ConnectDb;
 use php\Greeter;
 
 require_once 'Greeter.php';

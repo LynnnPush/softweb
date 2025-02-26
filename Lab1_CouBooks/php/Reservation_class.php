@@ -25,7 +25,13 @@ class Reservation_class
 
     public function setBook(array $selected_books): void
     {
-        $this->books = $selected_books;
+        if (is_array($selected_books)) {
+            $this->books = $selected_books;
+        } elseif (is_string($selected_books) && !empty($selected_books)) {
+            $this->books = [$selected_books];
+        } else {
+            $this->books = [];
+        }
     }
 
     // --- Save to database ---

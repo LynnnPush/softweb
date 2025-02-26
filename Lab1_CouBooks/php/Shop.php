@@ -60,7 +60,7 @@ class Shop
         // Create a ReservationClass object and populate it
         $reservation = new Reservation_class($this->db);
         $reservation->setEmail($this->data['email'] ?? '');
-        $reservation->setBook($this->data['books'] ?? '');
+        $reservation->setBook(is_array($this->data['books']) ? $this->data['books'] : []);
 
         // Save the reservation to the database
         $reservation->save();

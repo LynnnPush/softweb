@@ -4,22 +4,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1fd55cc5-15e6-4f17-8dc3-67c868b36de0" name="更改" comment="Add media queries to Home.css.">
-      <change afterPath="$PROJECT_DIR$/Lab1_CouBooks/Home.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lab1_CouBooks/php/ConnectDb.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lab1_CouBooks/php/Courses.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lab1_CouBooks/php/Feedback.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lab1_CouBooks/php/Greeter.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lab1_CouBooks/php/Reservation_class.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lab1_CouBooks/php/Shop.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lab1_CouBooks/php/main.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lab1_CouBooks/php/testCon.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lab1_CouBooks/php/thankyou.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lab1_CouBooks/test.html" afterDir="false" />
+    <list default="true" id="1fd55cc5-15e6-4f17-8dc3-67c868b36de0" name="更改" comment="Lab2 php completed (Playable demo: Reservation.css)">
+      <change afterPath="$PROJECT_DIR$/Lab1_CouBooks/isbn.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lab1_CouBooks/php/Courses.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lab1_CouBooks/php/check-user.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lab1_CouBooks/php/check_user.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lab1_CouBooks/php/feedback.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab1_CouBooks/.idea/SoftwebProject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Lab1_CouBooks/.idea/SoftwebProject.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab1_CouBooks/Reservation.css" beforeDir="false" afterPath="$PROJECT_DIR$/Lab1_CouBooks/php/Reservation.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab1_CouBooks/Reservation.html" beforeDir="false" afterPath="$PROJECT_DIR$/Lab1_CouBooks/php/Reservation.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1_CouBooks/ConnectDb.php" beforeDir="false" afterPath="$PROJECT_DIR$/Lab1_CouBooks/php/ConnectDb.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1_CouBooks/Courses.html" beforeDir="false" afterPath="$PROJECT_DIR$/Lab1_CouBooks/php/Courses.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1_CouBooks/Courses.php" beforeDir="false" afterPath="$PROJECT_DIR$/Lab1_CouBooks/php/Courses_Class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1_CouBooks/Feedback.css" beforeDir="false" afterPath="$PROJECT_DIR$/Lab1_CouBooks/php/Feedback.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1_CouBooks/Feedback.html" beforeDir="false" afterPath="$PROJECT_DIR$/Lab1_CouBooks/php/Feedback.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1_CouBooks/Feedback.php" beforeDir="false" afterPath="$PROJECT_DIR$/Lab1_CouBooks/php/Feedback_Class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1_CouBooks/php/Reservation.php" beforeDir="false" afterPath="$PROJECT_DIR$/Lab1_CouBooks/php/Reservation.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1_CouBooks/php/Reservation_class.php" beforeDir="false" afterPath="$PROJECT_DIR$/Lab1_CouBooks/php/Reservation_class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1_CouBooks/php/Shop.php" beforeDir="false" afterPath="$PROJECT_DIR$/Lab1_CouBooks/php/Shop.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1_CouBooks/php/main.php" beforeDir="false" afterPath="$PROJECT_DIR$/Lab1_CouBooks/php/main.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,6 +36,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -58,10 +62,10 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/../PHP/php-8.4.4-nts-Win32-vs17-x64/php.ini" root0="SKIP_INSPECTION" />
   </component>
-  <component name="KubernetesApiPersistence"><![CDATA[{}]]></component>
-  <component name="KubernetesApiProvider"><![CDATA[{
-  "isMigrated": true
-}]]></component>
+  <component name="KubernetesApiPersistence">{}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
   <component name="PhpDebugGeneral" listening_started="true" />
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP">
     <include_path>
@@ -79,36 +83,36 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "JavaScript Debug.main.php.executor": "Run",
-    "PHP Built-in Web Server.Unnamed.executor": "Run",
-    "PHP Script.Home.php.executor": "Run",
-    "PHP Script.Reservation.php.executor": "Debug",
-    "PHP Script.main.php.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "E:/PHP/php-8.4.4-nts-Win32-vs17-x64/php.exe",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "项目",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "reference.webide.settings.project.settings.php",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;JavaScript Debug.main.php.executor&quot;: &quot;Run&quot;,
+    &quot;PHP Built-in Web Server.Unnamed.executor&quot;: &quot;Run&quot;,
+    &quot;PHP Script.Home.php.executor&quot;: &quot;Run&quot;,
+    &quot;PHP Script.Reservation.php.executor&quot;: &quot;Debug&quot;,
+    &quot;PHP Script.main.php.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/PracticeProject/EE3_Website&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;项目&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.webide.settings.project.settings.php&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\SoftwebProject\Lab1_CouBooks" />
@@ -159,7 +163,13 @@
       <workItem from="1739963412462" duration="62000" />
       <workItem from="1739964562852" duration="350000" />
       <workItem from="1739991566619" duration="5178000" />
-      <workItem from="1740047888844" duration="20630000" />
+      <workItem from="1740047888844" duration="21270000" />
+      <workItem from="1740473201892" duration="4389000" />
+      <workItem from="1740477639959" duration="12607000" />
+      <workItem from="1740513553943" duration="5032000" />
+      <workItem from="1740597670308" duration="2834000" />
+      <workItem from="1740600716908" duration="1745000" />
+      <workItem from="1740602473912" duration="1132000" />
     </task>
     <task id="LOCAL-00001" summary="Create git and repo">
       <option name="closed" value="true" />
@@ -217,7 +227,15 @@
       <option name="project" value="LOCAL" />
       <updated>1739555369102</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Lab2 php completed (Playable demo: Reservation.css)">
+      <option name="closed" value="true" />
+      <created>1740084493619</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1740084493619</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -242,7 +260,8 @@
     <MESSAGE value="Add files not version controlled yet." />
     <MESSAGE value="All webpages and css files completed. Next: Media queries." />
     <MESSAGE value="Add media queries to Home.css." />
-    <option name="LAST_COMMIT_MESSAGE" value="Add media queries to Home.css." />
+    <MESSAGE value="Lab2 php completed (Playable demo: Reservation.css)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Lab2 php completed (Playable demo: Reservation.css)" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

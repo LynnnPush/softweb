@@ -1,5 +1,10 @@
 <?php
 
+namespace php;
+use Exception;
+use PDO;
+use PDOException;
+
 class ConnectDb
 {
 // Hold the class instance.
@@ -28,7 +33,7 @@ class ConnectDb
 
             // Optional: For better performance in most cases
             $this->conn->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
-        } catch(PDOException $e) {
+        } catch (PDOException $e) {
             // Log the error and throw a custom exception
             error_log("Database Connection Error: " . $e->getMessage());
             throw new Exception("Database connection failed. Please try again later.");
@@ -37,16 +42,19 @@ class ConnectDb
 
     public static function getInstance()
     {
-        if(!self::$instance)
-        {
+        if (!self::$instance) {
             self::$instance = new ConnectDb();
         }
 
         return self::$instance;
     }
 
-    public function getConnection()
+    public static function getConnection()
     {
-        return $this->conn;
+        if (!self::$instance) {
+            self::$instance = new ConnectDb();
+        }
+
+        return self::$instance->conn;
     }
 }

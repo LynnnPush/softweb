@@ -1,6 +1,11 @@
 <?php
 
-class Feedback
+namespace php;
+use PDO;
+use PDOException;
+
+require_once 'ConnectDb.php';
+class Feedback_Class
 {
     // Due to the save() method in the constructor, the object always refers to the last feedback.
     private string $author;
@@ -8,26 +13,26 @@ class Feedback
     private string $created;
     private int $id;
     // Instance of ConnectDb
-    private $db;
-    private  $conn;
+    private $conn;
 
-
+// Create an instance and save the contents into the DB.
     public function __construct(string $author, string $text)
     {
         // First establish connection with the database
-        $this->db = ConnectDb::getInstance();
-        $this->conn = $this->db->getConnection();
+        $this->conn = ConnectDb::getConnection();
 
         // Set the properties
         $this->author = $author;
         $this->text = $text;
         $this->created = date('Y-m-d H:i:s');
+        // Save the object to the database
+        $this->save();
     }
 
     public function save(): void
     {
         $stm = $this->conn->prepare('INSERT INTO feedback (author, text, created) VALUES (:author, :text, :created);');
-        $stm->execute([':author' => $this->author, ':text' => $this->text, ':created'=> $this->created]);
+        $stm->execute([':author' => $this->author, ':text' => $this->text, ':created' => $this->created]);
         $this->id = $this->conn->lastInsertId();    // Note that the object always refers to the last feedback.
     }
 
@@ -37,14 +42,13 @@ class Feedback
         $stm->execute();
         $result = array();
         while ($item = $stm->fetch()) {
-            $feedback = new Feedback($item['author'], $item['text']);
+            $feedback = new Feedback_Class($item['author'], $item['text']);
             $feedback->setId($item['id']);
             $feedback->setCreated($item['created']);
             $result[] = $feedback;
         };
         return $result;
     }
-
 
 
     public function getAuthor(): string

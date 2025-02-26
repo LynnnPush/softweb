@@ -1,11 +1,16 @@
 <?php
-class Courses {
+namespace php;
+use PDO;
+
+class Courses_Class
+{
     // Database connection (assumed to be a PDO instance)
     protected $db;  // Supposed to be a PDO (property $conn in ConnectDb class).
 
     // Constructor accepts the PDO connection
-    public function __construct(PDO $db) {
-        $this->db = $db;
+    public function __construct()
+    {
+        $this->db = ConnectDb::getConnection();
     }
 
     /**
@@ -13,7 +18,8 @@ class Courses {
      *
      * @return array Returns an array of course objects.
      */
-    public function getAllCourses(): array {
+    public function getAllCourses(): array
+    {
         $sql = "SELECT * FROM course";
         $stmt = $this->db->prepare($sql);
         $stmt->execute();
@@ -26,7 +32,8 @@ class Courses {
      * @param int $courseId The course id for which to retrieve books.
      * @return array Returns an array of book objects.
      */
-    public function getBooksByCourseId($courseId): array {
+    public function getBooksByCourseId($courseId): array
+    {
         // Assuming there is a "book" table with a "course_id" foreign key.
         $sql = "SELECT * FROM book WHERE course = :course_id";
         $stmt = $this->db->prepare($sql);
@@ -38,7 +45,7 @@ class Courses {
 
 // Usage example:
 // Assume $pdo is a valid PDO instance connected to the database.
-// $courses = new Courses($pdo);
+// $courses = new CoursesClass($pdo);
 // $allCourses = $courses->getAllCourses();
 // $booksForCourse = $courses->getBooksByCourseId($someCourse->getId());
 ?>
