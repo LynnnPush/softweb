@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1fd55cc5-15e6-4f17-8dc3-67c868b36de0" name="更改" comment="Lab3 local API to be tested (Error: Failed to fetch)" />
+    <list default="true" id="1fd55cc5-15e6-4f17-8dc3-67c868b36de0" name="更改" comment="Test 2 git ver1">
+      <change afterPath="$PROJECT_DIR$/Lab1_CouBooks/test.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -22,6 +25,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="GitHub" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitLabMergeRequestFiltersHistory">{
@@ -152,6 +160,7 @@
       <workItem from="1740600716908" duration="1745000" />
       <workItem from="1740602473912" duration="1452000" />
       <workItem from="1740926272593" duration="206000" />
+      <workItem from="1740926490795" duration="315000" />
     </task>
     <task id="LOCAL-00001" summary="Create git and repo">
       <option name="closed" value="true" />
@@ -233,7 +242,15 @@
       <option name="project" value="LOCAL" />
       <updated>1740926400087</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Test 2 git ver1">
+      <option name="closed" value="true" />
+      <created>1740926802792</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1740926802792</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -260,7 +277,8 @@
     <MESSAGE value="Add media queries to Home.css." />
     <MESSAGE value="Lab2 php completed (Playable demo: Reservation.css)" />
     <MESSAGE value="Lab3 local API to be tested (Error: Failed to fetch)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Lab3 local API to be tested (Error: Failed to fetch)" />
+    <MESSAGE value="Test 2 git ver1" />
+    <option name="LAST_COMMIT_MESSAGE" value="Test 2 git ver1" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
