@@ -1,0 +1,115 @@
+/* public/css/style.css */
+
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eef3f8;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Common section styling for header, main content, and footer */
+.top-part,
+.middle-part,
+.bottom-part {
+    width: 80%;
+    margin: 20px auto;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #fff;
+}
+
+/* Header section styling */
+.top-part {
+    background-color: #1da2d8;
+    border-color: #1da2d8;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Navigation menu styling inside the header */
+.top-part nav ul {
+    list-style: none;
+}
+
+.top-part nav li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.top-part nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.top-part nav a:hover {
+    text-decoration: underline;
+}
+
+/* Main content area styling */
+.middle-part main {
+    display: flex;
+    flex-direction: column;
+}
+
+.middle-part section {
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.middle-part section h2 {
+    margin-top: 0;
+}
+
+.middle-part label {
+    display: inline-block;
+    width: 120px;
+    margin-right: 10px;
+}
+
+/* Specific adjustment for textarea labels */
+.middle-part label[for="feedback"] {
+    display: block;
+    width: auto;
+    margin-bottom: 5px;
+}
+
+.middle-part textarea {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.middle-part button {
+    margin-top: 10px;
+}
+
+/* Footer section styling */
+.bottom-part {
+    background-color: #1da2d8;
+    border-color: #1da2d8;
+    color: #fff;
+}
+
+.bottom-part footer {
+    text-align: center;
+}
+
+.bottom-part footer a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.bottom-part footer a:hover {
+    color: #ccc;
+}

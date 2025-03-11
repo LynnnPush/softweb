@@ -1,0 +1,33 @@
+{# templates/base.html.twig #}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}My Website{% endblock %}</title>
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+    {% block stylesheets %}{% endblock %}
+</head>
+<body>
+<div class="top-part">
+    <header>
+        <h1>My Website</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="{{ path('homepage') }}">Home</a></li>
+            <li><a href="{{ path('courses') }}">Courses</a></li>
+            <li><a href="{{ path('feedback') }}">Feedback</a></li>
+        </ul>
+    </nav>
+</div>
+<div class="middle-part">
+    <main>
+        {% block body %}{% endblock %}
+    </main>
+</div>
+<div class="bottom-part">
+    <footer>
+        <p>&copy; {{ "now"|date("Y") }} My Website</p>
+    </footer>
+</div>
+</body>
