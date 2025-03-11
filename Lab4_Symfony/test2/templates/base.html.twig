@@ -1,6 +1,6 @@
 {# templates/base.html.twig #}
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>{% block title %}My Website{% endblock %}</title>
@@ -14,9 +14,10 @@
     </header>
     <nav>
         <ul>
-            <li><a href="{{ path('homepage') }}">Home</a></li>
-            <li><a href="{{ path('courses') }}">Courses</a></li>
-            <li><a href="{{ path('feedback') }}">Feedback</a></li>
+            <li><a href="{{ path('homepage') }}">HOME</a></li>
+            <li><a href="{{ path('courses') }}">COURSES</a></li>
+            <li><a href="{{ path('reservation') }}">RESERVATION</a></li>
+            <li><a href="{{ path('about') }}">ABOUT</a></li>
         </ul>
     </nav>
 </div>
@@ -31,3 +32,4 @@
     </footer>
 </div>
 </body>
+</html>
