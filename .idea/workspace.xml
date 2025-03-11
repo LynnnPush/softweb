@@ -4,17 +4,29 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1fd55cc5-15e6-4f17-8dc3-67c868b36de0" name="更改" comment="Test 2 git ver1">
-      <change afterPath="$PROJECT_DIR$/Lab1_CouBooks/test.php" afterDir="false" />
+    <list default="true" id="1fd55cc5-15e6-4f17-8dc3-67c868b36de0" name="更改" comment="Test 2 git ver5">
+      <change afterPath="$PROJECT_DIR$/Lab4_Symfony/test1/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lab4_Symfony/test1/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lab4_Symfony/test1/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lab4_Symfony/test1/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lab4_Symfony/untitled/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lab4_Symfony/untitled/.idea/deployment.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lab4_Symfony/untitled/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lab4_Symfony/untitled/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lab4_Symfony/untitled/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1_CouBooks/.idea/SoftwebProject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Lab1_CouBooks/.idea/SoftwebProject.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab4_Symfony/test2/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/Lab4_Symfony/test2/composer.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings">
-    <execution />
+  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+    <execution>
+      <phar pharPath="$PROJECT_DIR$/composer.phar" interpreterId="f919bb59-0d5b-4068-a3ec-e36e66f90d6b" />
+    </execution>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -90,9 +102,9 @@
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;项目&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.7456847&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;reference.webide.settings.project.settings.php&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
@@ -124,7 +136,6 @@
     <attachedChunks>
       <set>
         <option value="bundled-jdk-9f38398b9061-18abd8497189-intellij.indexing.shared.core-IU-241.14494.240" />
-        <option value="bundled-js-predefined-1d06a55b98c1-74d2a5396914-JavaScript-IU-241.14494.240" />
       </set>
     </attachedChunks>
   </component>
@@ -160,7 +171,12 @@
       <workItem from="1740600716908" duration="1745000" />
       <workItem from="1740602473912" duration="1452000" />
       <workItem from="1740926272593" duration="206000" />
-      <workItem from="1740926490795" duration="315000" />
+      <workItem from="1740926490795" duration="1060000" />
+      <workItem from="1741020023199" duration="509000" />
+      <workItem from="1741259367155" duration="684000" />
+      <workItem from="1741680908006" duration="272000" />
+      <workItem from="1741681193929" duration="1001000" />
+      <workItem from="1741682804363" duration="709000" />
     </task>
     <task id="LOCAL-00001" summary="Create git and repo">
       <option name="closed" value="true" />
@@ -250,7 +266,47 @@
       <option name="project" value="LOCAL" />
       <updated>1740926802792</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Test 2 git ver2">
+      <option name="closed" value="true" />
+      <created>1740926934769</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1740926934769</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Test 2 git ver2">
+      <option name="closed" value="true" />
+      <created>1740926948907</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1740926948907</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Test 2 git ver3">
+      <option name="closed" value="true" />
+      <created>1740927041707</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1740927041707</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Test 2 git ver4">
+      <option name="closed" value="true" />
+      <created>1740927085126</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1740927085126</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Test 2 git ver5">
+      <option name="closed" value="true" />
+      <created>1740927118876</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1740927118876</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -278,7 +334,11 @@
     <MESSAGE value="Lab2 php completed (Playable demo: Reservation.css)" />
     <MESSAGE value="Lab3 local API to be tested (Error: Failed to fetch)" />
     <MESSAGE value="Test 2 git ver1" />
-    <option name="LAST_COMMIT_MESSAGE" value="Test 2 git ver1" />
+    <MESSAGE value="Test 2 git ver2" />
+    <MESSAGE value="Test 2 git ver3" />
+    <MESSAGE value="Test 2 git ver4" />
+    <MESSAGE value="Test 2 git ver5" />
+    <option name="LAST_COMMIT_MESSAGE" value="Test 2 git ver5" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
